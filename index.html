@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSoja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="inicio">
+    <header class="cabecalho">
+        <div class="cabecalho-marca">
+            <img src="campopordosol.jpg" alt="Pôr do sol no campo" class="cabecalho-imagem">
+            <div>
+                <p class="cabecalho-subtitulo">Trigo e Soja</p>
+                <h1 class="cabecalho-titulo">AgroSoja</h1>
+            </div>
+        </div>
+        <nav>
+            <ul class="cabecalho-lista">
+                <li class="cabecalho-lista-item"><a href="#soja">Soja</a></li>
+                <li class="cabecalho-lista-item"><a href="#trigo">Trigo</a></li>
+                <li class="cabecalho-lista-item"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="botao-tema" id="botao-tema" type="button">
+            🌙 Tema
+        </button>
+    </header>
+
+    <main>
+        <section id="soja" class="secao">
+            <h2>Soja</h2>
+            <div class="conteudo">
+                <div class="texto">
+                    <p>A soja é um dos grãos mais importantes do agronegócio brasileiro, essencial para a economia e exportação.</p>
+                    <p>Nosso cultivo foca em alta produtividade e técnicas sustentáveis de manejo do solo.</p>
+                </div>
+                <div class="imagem">
+                    <img src="soja1.jpg" alt="Plantação de soja">
+                </div>
+            </div>
+        </section>
+
+        <section id="trigo" class="secao">
+            <h2>Trigo</h2>
+            <div class="conteudo">
+                <div class="texto">
+                    <p>O trigo é a base da alimentação e possui papel fundamental nas safras de inverno no Brasil.</p>
+                    <p>Trabalhamos com grãos selecionados para garantir alta qualidade na produção de farinhas e derivados.</p>
+                </div>
+                <div class="imagem">
+                    <img src="trigo1.jpg" alt="Campo de trigo">
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelo e-mail: <strong>contato@agrosoja.com</strong></p>
+        </section>
+    </main>
+</body>
+<script>
+    const botao = document.getElementById('botao-tema');
+    botao.addEventListener('click', () => {
+        document.body.classList.toggle('escuro');
+    });
+</script>
+
+</html>
