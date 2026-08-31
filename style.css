@@ -1,4 +1,4 @@
-/* --- TEMA CLARO (PADRÃO) --- */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -104,7 +104,7 @@ body {
 }
 
 
-/* --- TEMA ESCURO (NO FINAL DO CÓDIGO) --- */
+
 
 body.escuro {
     background-color: #1e2418;
