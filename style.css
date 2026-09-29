@@ -99,6 +99,108 @@ body {
     border-radius: 5px;
 }
 
+/* xxxxxxxxxxxxx secao CONTATO xxxxxxxxxxxxxx */
+.fale-conosco {
+    /*  22/09  */
+    max-width: 600px;
+    margin: 0 auto 2em;
+    padding: clamp(18px, 4vw, 28px);
+    background-color: #FFFEF9;
+    border-radius: 5px;
+    box-shadow: 8px 18px #2e431c2e;
+}
+
+.fale-conosco h2,
+/* titulo e paragrafo */
+.fale-conosco>p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.fale-conosco form {
+    /* formulario  */
+    display: flex;
+    flex-direction: column;
+}
+
+.fale-conosco label {
+    /* label = legendas */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #52702f;
+    font-weight: bold;
+}
+
+.fale-conosco input,
+/* caixas de entrada de texto  */
+.fale-conosco textarea {
+    padding: 10px;
+    border: 1px solid #d2ddbe;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* 22/09 */
+.fale-conosco input::placeholder,
+/* ajuda que é escrita dentro dos inputs */
+.fale-conosco textarea::placeholder {
+    color: #5C614C;
+}
+
+.fale-conosco textarea {
+    resize: vertical;
+}
+
+.fale-conosco input:focus,
+/* onde ficara o foco / cursor */
+.fale-conosco textarea:focus {
+    outline: 2px solid #C5973E;
+}
+
+.fale-conosco button {
+    /* botao da secao contato */
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #52702F;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fale-conosco button:hover {
+    /* efeito do botao ao passar o mouse */
+    background-color: #2E431C;
+}
+
+.fale-conosco button:disabled {
+    /* botao desabilitado  */
+    background-color: #808080;
+    cursor: wait;
+}
+
+.fale-conosco .aviso-formulario {
+    /* alerta de aviso do form */
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #5C614C;
+    font-size: 13px;
+}
+
+.fale-conosco .sucesso {
+    /* aviso de sucesso do form */
+    color: #236730;
+    font-weight: bold;
+}
+
+.fale-conosco .erro {
+    /* aviso de erro */
+    color: #912E23;
+    font-weight: bold;
+}
+
 botao-tema {
     border: none;
     border-radius: 4px;
@@ -114,6 +216,33 @@ botao-tema {
     background-color: #2e431c;
 }
 
+
+.voltar {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 10;
+    /* Ajuste: usamos flex para centralizar a seta dentro de um botão redondo. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: #FFFFFF;
+    background-color: #aecc7e;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    opacity: 0.85;
+    box-shadow: 0 3px 9px #2e431c47;
+}
+
+.voltar:hover {
+    background-color:#2e431c;
+    opacity: 1;
+}
 
 /*14/09 - TEMA ESCURO */
 
